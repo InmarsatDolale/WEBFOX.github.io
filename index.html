@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мюзикл "Крыс и Лис"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #ff7f00; /* Оранжевый цвет */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #666; /* Темно-серый цвет */
+            padding: 10px;
+        }
+        nav button {
+            background-color: #ff7f00; /* Оранжевый цвет */
+            color: #fff;
+            border: none;
+            padding: 14px 20px;
+            margin: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: #cc6600; /* Темнее оранжевый при наведении */
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .description {
+            margin: 20px auto;
+            max-width: 800px;
+            color: #666; /* Серый цвет текста */
+        }
+        .characters {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .character {
+            background-color: #fff;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .character h3 {
+            color: #ff7f00; /* Оранжевый цвет заголовков персонажей */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Мюзикл "Крыс и Лис"</h1>
+    <p>Погружение в волшебную историю дружбы и приключений</p>
+</header>
+
+<nav>
+    <button onclick="scrollToSection('#about')">О мюзикле</button>
+    <button onclick="scrollToSection('#characters')">Персонажи</button>
+    <button onclick="scrollToSection('#tickets')">Купить билеты</button>
+</nav>
+
+<main>
+    <section id="about" class="description">
+        <h2>О мюзикле</h2>
+        <p>Добро пожаловать на мюзикл "Крыс и Лис" – историю о двух друзьях, которые преодолевают препятствия, чтобы спасти лес от злых сил. Красочные костюмы, запоминающиеся песни и волшебная атмосфера ждут вас в этом удивительном спектакле!</p>
+    </section>
+
+    <section id="characters" class="characters">
+        <div class="character">
+            <h3>Крыс</h3>
+            <p>Крыс – хитрый и осторожный персонаж, который знает все тайные ходы и опасности леса.</p>
+        </div>
+        <div class="character">
+            <h3>Лис</h3>
+            <p>Лис – смелый и ловкий, готов в любой момент прийти на помощь своему другу Крысу.</p>
+        </div>
+    </section>
+
+    <section id="tickets" class="description">
+        <h2>Купить билеты</h2>
+        <p>Билеты можно приобрести на официальном сайте или в кассах театра.</p>
+    </section>
+</main>
+
+<footer>
+    <p>Мюзикл "Крыс и Лис" © 2024. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
